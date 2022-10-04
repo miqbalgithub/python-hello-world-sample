@@ -15,8 +15,8 @@ def hello1():
 def hello2():
     return "Halaman 2"
 
-@app.route3('/3')
-def hello():
+@app.route('/3')
+def hello3():
     return "Halaman 3"
 
 if __name__ == '__main__':
