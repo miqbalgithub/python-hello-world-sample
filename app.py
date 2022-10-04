@@ -8,14 +8,14 @@ def hello():
     return "Hello World!"
     
 @app.route('/1')
-def hello():
+def hello1():
     return "Halaman 1"
     
 @app.route('/2')
-def hello():
+def hello2():
     return "Halaman 2"
 
-@app.route('/3')
+@app.route3('/3')
 def hello():
     return "Halaman 3"
 
