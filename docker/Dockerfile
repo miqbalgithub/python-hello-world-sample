@@ -7,11 +7,11 @@ WORKDIR /app
 COPY requirements.txt /app
 
 # Install any dependencies
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt && pip install -U appdynamics
 
 # Start Appdynamics
-RUN pip install --upgrade pip
-RUN pip install -U appdynamics
+#RUN pip install --upgrade pip
+#RUN pip install -U appdynamics
 COPY appdynamics.cfg /app
 # End Appdynamics
 
