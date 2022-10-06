@@ -9,11 +9,11 @@ COPY requirements.txt /app
 # Install any dependencies
 RUN pip install -r requirements.txt
 
-### Start Appdynamics ###
+# Start Appdynamics
 RUN pip install --upgrade pip
 RUN pip install -U appdynamics
 COPY appdynamics.cfg /app
-### End Appdynamics ###
+# End Appdynamics
 
 # Copy the content of the local src directory to the working directory
 COPY src /app
