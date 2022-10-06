@@ -1,1 +1,2 @@
-Flask==2.1.0
+Flask==2.2.2
+appdynamics==22.8.0.5306

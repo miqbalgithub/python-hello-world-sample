@@ -7,7 +7,7 @@ WORKDIR /app
 COPY requirements.txt /app
 
 # Install any dependencies
-RUN pip install --upgrade pip && pip install -r requirements.txt && pip install -U appdynamics
+RUN pip install -r requirements.txt
 
 # Start Appdynamics
 #RUN pip install --upgrade pip
